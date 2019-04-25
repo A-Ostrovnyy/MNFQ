@@ -1,0 +1,55 @@
+{% set news = [
+    {
+        poster: "img/aside_1.jpg",
+        title: "Иллюстрации: Будни влюбленных"
+    },
+    {
+        poster: "img/aside_2.jpg",
+        title: "Истории, финал которых непредсказуем"
+    },
+    {
+        poster: "img/aside_3.jpg",
+        title: "Иллюстрации: Будни влюбленных"
+    },
+    {
+        poster: "img/aside_4.jpg",
+        title: "Истории, финал которых непредсказуем"
+    },
+    {
+        poster: "img/aside_5.jpg",
+        video: "true",
+        icon: "5",
+        title: "Видео: Будни влюбленных"
+    }
+] 
+%}
+{% for item in news %}
+    <div class="news">
+        <div class="news__poster">
+            <img src="{{item.poster}}" alt="news_1" class="image">
+        </div>
+        <div class="news__content">
+            {% if item.video %}
+            <div class="news__icon" >
+                {{mixins.soc(item.icon)}}
+            </div> 
+            {% endif %}
+            <h4 class="news__title">
+                {{item.title}}
+            </h4>
+            <div class="news__info">
+                <data class="news__date news__item">
+                    5 июля, 2018
+                </data>
+                <a href="#" class="news__link news__item">
+                    <img src="img/comments.svg" alt="comments" class="news__img">
+                    <span class="news__text">12</span>
+                </a>
+                <a href="#" class="news__link news__item">
+                    <img src="img/heart.svg" alt="like" class="news__img">
+                    <span class="news__text">7</span>
+                </a>
+            </div>
+        </div>
+    </div>
+{% endfor %} 

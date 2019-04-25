@@ -1,0 +1,21 @@
+.pagination
+    margin: 75px auto
+    text-align: center
+    color: $quote_text
+    font-size: 16px
+
+    &__item
+        color: inherit
+        text-decoration: none
+        margin-right: 20px
+        padding: 3px
+
+        &:hover
+            color: $hover
+
+        &::last-child
+            margin-right: 0
+
+        &--isactive
+            border-bottom: 2px solid $hover
+

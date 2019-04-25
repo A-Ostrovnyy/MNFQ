@@ -1,3 +1,3 @@
-import sayHello from './lib/sayHello.js';
+import sayHello from '../../../MNFQ/src/js/lib/sayHello.js';
 
 sayHello();

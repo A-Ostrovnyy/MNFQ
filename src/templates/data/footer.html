@@ -1,0 +1,59 @@
+{% set links = [
+    {
+        link: 'ГЛАВНАЯ'
+    },
+    {
+        link: 'О НАС'
+    },
+    {
+        link: 'РЕКЛАМОДАТЕЛЯМ'
+    }
+] 
+%}
+{% set links2 = [
+    {
+        link1: 'СТАТЬ АВТОРОМ'
+    },
+    {
+        link1: 'ПРИСЛАТЬ СТАТЬЮ'
+    }
+] 
+%}
+
+<footer class="footer">
+    <div class="container">
+        <dl class="footer__list"></dl>
+        {% for items in links %}
+            <dd class="footer__item">
+                <a href="#" class="footer__link">{{items.link}}</a>
+            </dd>
+        {% endfor %}
+        </dl>
+        <dl class="footer__list">
+        {% for items in links2 %}
+            <dd class="footer__item">
+                <a href="#" class="footer__link">{{items.link1}}</a>
+            </dd>
+        {% endfor %}
+        </dl>
+        <dl class="footer__list">
+            <dt class="footer__list">
+                СВЯЖИТЕСЬ С НАМИ:
+            </dt>
+            <dd class="footer__email">
+                <a href="mailto:Email@mail.com">Email@mail.com</a>
+            </dd>
+        </dl>
+        <dl class="footer__list">
+            <dt class="footer__list">
+                ПОДПИСЫВАЙТЕСЬ:
+            </dt>
+            <dd class="footer__social footer__social--facebook">
+                
+            </dd>
+            <dd class="footer__social footer__social--youtube">
+
+            </dd>
+        </dl>
+    </div>
+</footer>

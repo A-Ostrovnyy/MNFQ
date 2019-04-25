@@ -1,5 +1,50 @@
++font(Arimo, arimo)
+
++font(Playfair Display, playfairdisplay)
+
+@font-face
+    font-family: Playfair Display
+    src: url("../fonts/playfairdisplay_italic.woff2") format("woff2"), url("../fonts/playfairdisplay_italic.woff") format("woff")
+    font-weight: 400
+    font-style: italic
+    font-display: swap
+
++font(Montserrat, montserrat_regular)
+
+@font-face
+    font-family: Montserrat
+    src: url("../fonts/montserrat_medium.woff2") format("woff2"), url("../fonts/montserrat_medium.woff") format("woff")
+    font-weight: 500
+    font-style: normal
+    font-display: swap
+
+@font-face
+    font-family: Montserrat
+    src: url("../fonts/montserrat_semibold.woff2") format("woff2"), url("../fonts/montserrat_semibold.woff") format("woff")
+    font-weight: 600
+    font-style: normal
+    font-display: swap
+
+@font-face
+    font-family: Montserrat
+    src: url("../fonts/montserrat_bold.woff2") format("woff2"), url("../fonts/montserrat_bold.woff") format("woff")
+    font-weight: 700
+    font-style: normal
+    font-display: swap
+    
 body
-	background: #FFF
-	+css-lock(16, 50, 600, 1000)
-	line-height: 1.4
+    background: #FFF
+    line-height: 1.4
+    padding: 0
+    margin: 0
+    font-family: Arimo
+
+main
+    padding: 0 20px
+
+.container
+    margin: 0 auto
+    max-width: 1366px
+    width: 100%
+    padding: 0 15px
 

@@ -1,0 +1,90 @@
+.posts
+    padding: 20px
+    padding-left: 0
+    margin-bottom: 50px
+
+.post
+    width: 100%
+    color: $quote_text
+    display: flex
+    flex-direction: row
+    align-items: center
+
+    &__img
+        min-width: 290px
+        margin-right: -40px
+
+    &__title
+        margin-bottom: 30px
+        padding: 0
+        font-family: Playfair Display, sans serif
+        +f(playfairdisplay, 46, 3)
+        text-decoration: none
+        color: inherit
+
+        &:hover
+            color: $hover
+
+    &__preview
+        +f(arimo, 16, 0)
+
+    & .extra
+        margin-bottom: 30px
+
+.quote
+    border: 10px solid $post_yellow
+    border-top: none
+    border-right: none
+    position: relative
+    padding: 90px 40px 40px 100px
+
+    &::before,
+    &::after
+        content: ''
+        background-color: $post_yellow
+        display: block
+        position: absolute
+
+    &::before
+        top: 0
+        left: 0
+        height: 10px
+        width: 55%
+
+    &::after
+        bottom: 0
+        right: 0
+        width: 10px
+        height: 45%
+
+    &__title
+        font-family: Playfair Display, sans serif
+        +f(playfairdisplay, 56, 3)
+
+    &__wrapper
+        font-family: Playfair Display
+        font-style: italic
+        font-size: 32px
+        color: $quote_text
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        margin-bottom: 50px
+
+    &__icon
+        width: 35px
+        height: 24px
+        margin-right: 15px
+
+    &__content
+        max-width: 700px
+
+    &__author
+        font-family: Montserrat
+        font-weight: 500
+        font-style: normal
+        color: $quote_author
+        text-transform: uppercase
+        font-size: 12px
+        line-height: 2
+        letter-spacing: 3px

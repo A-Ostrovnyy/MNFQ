@@ -1,0 +1,35 @@
+{% set
+    links = [
+        {
+            page: '1',
+            class: 'pagination__item--isactive'
+        },
+        {
+            page: '2'
+        },
+        {
+            page: '3'
+        },
+        {
+            page: '4'
+        },
+        {
+            page: '5'
+        },
+        {
+            page: '...'
+        },
+        {
+            page: '24'
+        }
+    ]
+%}
+<div class="pagination">
+{% for page in links %}
+    <a href="#" class="pagination__item {{page.class}}">{{page.page}}</a>
+{% endfor %}
+</div>
+
+{% if items.class %}
+    {{items.class}}
+{% endif %}
